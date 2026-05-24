@@ -1,0 +1,61 @@
+name: Interview Experience
+description: Share your real interview experience
+title: "[Interview]: Company Name - Role"
+labels: ["interview"]
+
+body:
+  - type: input
+    id: company
+    attributes:
+      label: Company Name
+      placeholder: Google
+
+  - type: input
+    id: role
+    attributes:
+      label: Role
+      placeholder: Frontend Developer
+
+  - type: dropdown
+    id: experience
+    attributes:
+      label: Experience Level
+      options:
+        - Fresher
+        - 1-2 Years
+        - 3-5 Years
+        - Senior
+
+  - type: textarea
+    id: rounds
+    attributes:
+      label: Interview Rounds
+      placeholder: HR Round, Technical Round...
+
+  - type: textarea
+    id: questions
+    attributes:
+      label: Topics / Questions Asked
+      placeholder: React hooks, JavaScript closures...
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options:
+        - Easy
+        - Medium
+        - Hard
+
+  - type: textarea
+    id: tips
+    attributes:
+      label: Tips for Others
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      options:
+        - label: This is a real interview experience
+          required: true
