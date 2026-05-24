@@ -1,1 +1,58 @@
 
+name: Interview Experience
+description: Share real interview questions and experiences
+title: "[Interview] "
+labels: ["interview"]
+
+body:
+  - type: input
+    id: role
+    attributes:
+      label: Role / Position
+      placeholder: e.g. React Developer, SDE Intern
+    validations:
+      required: true
+
+  - type: input
+    id: company
+    attributes:
+      label: Company (Optional)
+      placeholder: e.g. Google, Startup, Product Company
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: Experience Level
+      options:
+        - Fresher
+        - 1-2 Years
+        - 3-5 Years
+        - Senior
+
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions / Topics Asked
+      description: Share the actual topics, coding questions, concepts, or interview rounds.
+      placeholder: |
+        - React hooks
+        - JavaScript closures
+        - Event loop
+        - Build Todo App
+        - REST API questions
+    validations:
+      required: true
+
+  - type: textarea
+    id: tips
+    attributes:
+      label: Tips (Optional)
+      placeholder: e.g. Focus more on JavaScript fundamentals
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      options:
+        - label: This is a real interview experience
+          required: true
